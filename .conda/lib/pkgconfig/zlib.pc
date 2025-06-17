@@ -1,0 +1,13 @@
+prefix=/home/seobin/Desktop/paper_reproduce/spark/.conda
+exec_prefix=/home/seobin/Desktop/paper_reproduce/spark/.conda
+libdir=/home/seobin/Desktop/paper_reproduce/spark/.conda/lib
+sharedlibdir=/home/seobin/Desktop/paper_reproduce/spark/.conda/lib
+includedir=/home/seobin/Desktop/paper_reproduce/spark/.conda/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
