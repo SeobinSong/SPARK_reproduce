@@ -1,5 +1,5 @@
 import torch
-from spark_encode import spark_encode
+from function.spark_encode import spark_encode
 from spark_decode import spark_decode
 from transformers import BertForSequenceClassification, BertTokenizer
 from datasets import load_dataset
