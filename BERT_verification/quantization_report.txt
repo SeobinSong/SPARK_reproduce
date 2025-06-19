@@ -1,0 +1,305 @@
+[bert.embeddings.word_embeddings.weight] Quantized range: [-127, 117]
+[bert.embeddings.word_embeddings.weight] Quantization error: mean=0.001871, max=0.003742
+
+[bert.embeddings.position_embeddings.weight] Quantized range: [-127, 97]
+[bert.embeddings.position_embeddings.weight] Quantization error: mean=0.001869, max=0.003737
+
+[bert.embeddings.token_type_embeddings.weight] Quantized range: [-127, 55]
+[bert.embeddings.token_type_embeddings.weight] Quantization error: mean=0.001385, max=0.002735
+
+[bert.embeddings.LayerNorm.weight] Quantized range: [11, 127]
+[bert.embeddings.LayerNorm.weight] Quantization error: mean=0.001907, max=0.003861
+
+[bert.encoder.layer.0.attention.self.query.weight] Quantized range: [-127, 111]
+[bert.encoder.layer.0.attention.self.query.weight] Quantization error: mean=0.001028, max=0.002055
+
+[bert.encoder.layer.0.attention.self.key.weight] Quantized range: [-108, 127]
+[bert.encoder.layer.0.attention.self.key.weight] Quantization error: mean=0.001645, max=0.003286
+
+[bert.encoder.layer.0.attention.self.value.weight] Quantized range: [-107, 127]
+[bert.encoder.layer.0.attention.self.value.weight] Quantization error: mean=0.000380, max=0.000760
+
+[bert.encoder.layer.0.attention.output.dense.weight] Quantized range: [-107, 127]
+[bert.encoder.layer.0.attention.output.dense.weight] Quantization error: mean=0.001157, max=0.002317
+
+[bert.encoder.layer.0.attention.output.LayerNorm.weight] Quantized range: [30, 127]
+[bert.encoder.layer.0.attention.output.LayerNorm.weight] Quantization error: mean=0.005911, max=0.011804
+
+[bert.encoder.layer.0.intermediate.dense.weight] Quantized range: [-117, 127]
+[bert.encoder.layer.0.intermediate.dense.weight] Quantization error: mean=0.000636, max=0.001271
+
+[bert.encoder.layer.0.output.dense.weight] Quantized range: [-127, 58]
+[bert.encoder.layer.0.output.dense.weight] Quantization error: mean=0.003305, max=0.006611
+
+[bert.encoder.layer.0.output.LayerNorm.weight] Quantized range: [16, 127]
+[bert.encoder.layer.0.output.LayerNorm.weight] Quantization error: mean=0.001654, max=0.003198
+
+[bert.encoder.layer.1.attention.self.query.weight] Quantized range: [-127, 99]
+[bert.encoder.layer.1.attention.self.query.weight] Quantization error: mean=0.000767, max=0.001533
+
+[bert.encoder.layer.1.attention.self.key.weight] Quantized range: [-127, 127]
+[bert.encoder.layer.1.attention.self.key.weight] Quantization error: mean=0.000712, max=0.001425
+
+[bert.encoder.layer.1.attention.self.value.weight] Quantized range: [-127, 116]
+[bert.encoder.layer.1.attention.self.value.weight] Quantization error: mean=0.000418, max=0.000836
+
+[bert.encoder.layer.1.attention.output.dense.weight] Quantized range: [-109, 127]
+[bert.encoder.layer.1.attention.output.dense.weight] Quantization error: mean=0.000711, max=0.001423
+
+[bert.encoder.layer.1.attention.output.LayerNorm.weight] Quantized range: [27, 127]
+[bert.encoder.layer.1.attention.output.LayerNorm.weight] Quantization error: mean=0.006073, max=0.011965
+
+[bert.encoder.layer.1.intermediate.dense.weight] Quantized range: [-78, 127]
+[bert.encoder.layer.1.intermediate.dense.weight] Quantization error: mean=0.000997, max=0.001995
+
+[bert.encoder.layer.1.output.dense.weight] Quantized range: [-127, 70]
+[bert.encoder.layer.1.output.dense.weight] Quantization error: mean=0.004234, max=0.008474
+
+[bert.encoder.layer.1.output.LayerNorm.weight] Quantized range: [36, 127]
+[bert.encoder.layer.1.output.LayerNorm.weight] Quantization error: mean=0.001930, max=0.003807
+
+[bert.encoder.layer.2.attention.self.query.weight] Quantized range: [-127, 125]
+[bert.encoder.layer.2.attention.self.query.weight] Quantization error: mean=0.001039, max=0.002079
+
+[bert.encoder.layer.2.attention.self.key.weight] Quantized range: [-126, 127]
+[bert.encoder.layer.2.attention.self.key.weight] Quantization error: mean=0.000903, max=0.001806
+
+[bert.encoder.layer.2.attention.self.value.weight] Quantized range: [-116, 127]
+[bert.encoder.layer.2.attention.self.value.weight] Quantization error: mean=0.000408, max=0.000816
+
+[bert.encoder.layer.2.attention.output.dense.weight] Quantized range: [-127, 116]
+[bert.encoder.layer.2.attention.output.dense.weight] Quantization error: mean=0.000528, max=0.001056
+
+[bert.encoder.layer.2.attention.output.LayerNorm.weight] Quantized range: [31, 127]
+[bert.encoder.layer.2.attention.output.LayerNorm.weight] Quantization error: mean=0.004468, max=0.008983
+
+[bert.encoder.layer.2.intermediate.dense.weight] Quantized range: [-127, 116]
+[bert.encoder.layer.2.intermediate.dense.weight] Quantization error: mean=0.001239, max=0.002478
+
+[bert.encoder.layer.2.output.dense.weight] Quantized range: [-127, 40]
+[bert.encoder.layer.2.output.dense.weight] Quantization error: mean=0.006554, max=0.013114
+
+[bert.encoder.layer.2.output.LayerNorm.weight] Quantized range: [55, 127]
+[bert.encoder.layer.2.output.LayerNorm.weight] Quantization error: mean=0.001855, max=0.003710
+
+[bert.encoder.layer.3.attention.self.query.weight] Quantized range: [-127, 126]
+[bert.encoder.layer.3.attention.self.query.weight] Quantization error: mean=0.000662, max=0.001324
+
+[bert.encoder.layer.3.attention.self.key.weight] Quantized range: [-127, 127]
+[bert.encoder.layer.3.attention.self.key.weight] Quantization error: mean=0.000679, max=0.001359
+
+[bert.encoder.layer.3.attention.self.value.weight] Quantized range: [-120, 127]
+[bert.encoder.layer.3.attention.self.value.weight] Quantization error: mean=0.000377, max=0.000755
+
+[bert.encoder.layer.3.attention.output.dense.weight] Quantized range: [-127, 87]
+[bert.encoder.layer.3.attention.output.dense.weight] Quantization error: mean=0.000762, max=0.001523
+
+[bert.encoder.layer.3.attention.output.LayerNorm.weight] Quantized range: [20, 127]
+[bert.encoder.layer.3.attention.output.LayerNorm.weight] Quantization error: mean=0.006977, max=0.013757
+
+[bert.encoder.layer.3.intermediate.dense.weight] Quantized range: [-127, 122]
+[bert.encoder.layer.3.intermediate.dense.weight] Quantization error: mean=0.001295, max=0.002590
+
+[bert.encoder.layer.3.output.dense.weight] Quantized range: [-127, 15]
+[bert.encoder.layer.3.output.dense.weight] Quantization error: mean=0.013062, max=0.026150
+
+[bert.encoder.layer.3.output.LayerNorm.weight] Quantized range: [54, 127]
+[bert.encoder.layer.3.output.LayerNorm.weight] Quantization error: mean=0.001906, max=0.003580
+
+[bert.encoder.layer.4.attention.self.query.weight] Quantized range: [-127, 114]
+[bert.encoder.layer.4.attention.self.query.weight] Quantization error: mean=0.000767, max=0.001533
+
+[bert.encoder.layer.4.attention.self.key.weight] Quantized range: [-119, 127]
+[bert.encoder.layer.4.attention.self.key.weight] Quantization error: mean=0.000772, max=0.001543
+
+[bert.encoder.layer.4.attention.self.value.weight] Quantized range: [-127, 127]
+[bert.encoder.layer.4.attention.self.value.weight] Quantization error: mean=0.000413, max=0.000826
+
+[bert.encoder.layer.4.attention.output.dense.weight] Quantized range: [-127, 91]
+[bert.encoder.layer.4.attention.output.dense.weight] Quantization error: mean=0.000645, max=0.001290
+
+[bert.encoder.layer.4.attention.output.LayerNorm.weight] Quantized range: [19, 127]
+[bert.encoder.layer.4.attention.output.LayerNorm.weight] Quantization error: mean=0.007139, max=0.014673
+
+[bert.encoder.layer.4.intermediate.dense.weight] Quantized range: [-79, 127]
+[bert.encoder.layer.4.intermediate.dense.weight] Quantization error: mean=0.001703, max=0.003404
+
+[bert.encoder.layer.4.output.dense.weight] Quantized range: [-127, 36]
+[bert.encoder.layer.4.output.dense.weight] Quantization error: mean=0.013401, max=0.026844
+
+[bert.encoder.layer.4.output.LayerNorm.weight] Quantized range: [49, 127]
+[bert.encoder.layer.4.output.LayerNorm.weight] Quantization error: mean=0.001804, max=0.003698
+
+[bert.encoder.layer.5.attention.self.query.weight] Quantized range: [-117, 127]
+[bert.encoder.layer.5.attention.self.query.weight] Quantization error: mean=0.000724, max=0.001447
+
+[bert.encoder.layer.5.attention.self.key.weight] Quantized range: [-113, 127]
+[bert.encoder.layer.5.attention.self.key.weight] Quantization error: mean=0.000708, max=0.001417
+
+[bert.encoder.layer.5.attention.self.value.weight] Quantized range: [-127, 123]
+[bert.encoder.layer.5.attention.self.value.weight] Quantization error: mean=0.000436, max=0.000872
+
+[bert.encoder.layer.5.attention.output.dense.weight] Quantized range: [-117, 127]
+[bert.encoder.layer.5.attention.output.dense.weight] Quantization error: mean=0.000636, max=0.001271
+
+[bert.encoder.layer.5.attention.output.LayerNorm.weight] Quantized range: [23, 127]
+[bert.encoder.layer.5.attention.output.LayerNorm.weight] Quantization error: mean=0.007046, max=0.013365
+
+[bert.encoder.layer.5.intermediate.dense.weight] Quantized range: [-81, 127]
+[bert.encoder.layer.5.intermediate.dense.weight] Quantization error: mean=0.001086, max=0.002172
+
+[bert.encoder.layer.5.output.dense.weight] Quantized range: [-127, 53]
+[bert.encoder.layer.5.output.dense.weight] Quantization error: mean=0.011856, max=0.023719
+
+[bert.encoder.layer.5.output.LayerNorm.weight] Quantized range: [56, 127]
+[bert.encoder.layer.5.output.LayerNorm.weight] Quantization error: mean=0.001864, max=0.003688
+
+[bert.encoder.layer.6.attention.self.query.weight] Quantized range: [-108, 127]
+[bert.encoder.layer.6.attention.self.query.weight] Quantization error: mean=0.000629, max=0.001258
+
+[bert.encoder.layer.6.attention.self.key.weight] Quantized range: [-118, 127]
+[bert.encoder.layer.6.attention.self.key.weight] Quantization error: mean=0.000709, max=0.001418
+
+[bert.encoder.layer.6.attention.self.value.weight] Quantized range: [-127, 123]
+[bert.encoder.layer.6.attention.self.value.weight] Quantization error: mean=0.000381, max=0.000761
+
+[bert.encoder.layer.6.attention.output.dense.weight] Quantized range: [-127, 118]
+[bert.encoder.layer.6.attention.output.dense.weight] Quantization error: mean=0.000424, max=0.000848
+
+[bert.encoder.layer.6.attention.output.LayerNorm.weight] Quantized range: [24, 127]
+[bert.encoder.layer.6.attention.output.LayerNorm.weight] Quantization error: mean=0.006577, max=0.013151
+
+[bert.encoder.layer.6.intermediate.dense.weight] Quantized range: [-108, 127]
+[bert.encoder.layer.6.intermediate.dense.weight] Quantization error: mean=0.000690, max=0.001381
+
+[bert.encoder.layer.6.output.dense.weight] Quantized range: [-127, 43]
+[bert.encoder.layer.6.output.dense.weight] Quantization error: mean=0.009464, max=0.018936
+
+[bert.encoder.layer.6.output.LayerNorm.weight] Quantized range: [52, 127]
+[bert.encoder.layer.6.output.LayerNorm.weight] Quantization error: mean=0.001835, max=0.003589
+
+[bert.encoder.layer.7.attention.self.query.weight] Quantized range: [-103, 127]
+[bert.encoder.layer.7.attention.self.query.weight] Quantization error: mean=0.000651, max=0.001302
+
+[bert.encoder.layer.7.attention.self.key.weight] Quantized range: [-113, 127]
+[bert.encoder.layer.7.attention.self.key.weight] Quantization error: mean=0.000855, max=0.001711
+
+[bert.encoder.layer.7.attention.self.value.weight] Quantized range: [-127, 110]
+[bert.encoder.layer.7.attention.self.value.weight] Quantization error: mean=0.000384, max=0.000769
+
+[bert.encoder.layer.7.attention.output.dense.weight] Quantized range: [-127, 127]
+[bert.encoder.layer.7.attention.output.dense.weight] Quantization error: mean=0.000483, max=0.000965
+
+[bert.encoder.layer.7.attention.output.LayerNorm.weight] Quantized range: [24, 127]
+[bert.encoder.layer.7.attention.output.LayerNorm.weight] Quantization error: mean=0.006577, max=0.013237
+
+[bert.encoder.layer.7.intermediate.dense.weight] Quantized range: [-102, 127]
+[bert.encoder.layer.7.intermediate.dense.weight] Quantization error: mean=0.000784, max=0.001568
+
+[bert.encoder.layer.7.output.dense.weight] Quantized range: [-127, 34]
+[bert.encoder.layer.7.output.dense.weight] Quantization error: mean=0.007018, max=0.014030
+
+[bert.encoder.layer.7.output.LayerNorm.weight] Quantized range: [37, 127]
+[bert.encoder.layer.7.output.LayerNorm.weight] Quantization error: mean=0.002296, max=0.004565
+
+[bert.encoder.layer.8.attention.self.query.weight] Quantized range: [-127, 117]
+[bert.encoder.layer.8.attention.self.query.weight] Quantization error: mean=0.000747, max=0.001494
+
+[bert.encoder.layer.8.attention.self.key.weight] Quantized range: [-127, 121]
+[bert.encoder.layer.8.attention.self.key.weight] Quantization error: mean=0.000793, max=0.001583
+
+[bert.encoder.layer.8.attention.self.value.weight] Quantized range: [-127, 122]
+[bert.encoder.layer.8.attention.self.value.weight] Quantization error: mean=0.000366, max=0.000732
+
+[bert.encoder.layer.8.attention.output.dense.weight] Quantized range: [-127, 96]
+[bert.encoder.layer.8.attention.output.dense.weight] Quantization error: mean=0.001067, max=0.002134
+
+[bert.encoder.layer.8.attention.output.LayerNorm.weight] Quantized range: [23, 127]
+[bert.encoder.layer.8.attention.output.LayerNorm.weight] Quantization error: mean=0.006605, max=0.013396
+
+[bert.encoder.layer.8.intermediate.dense.weight] Quantized range: [-127, 111]
+[bert.encoder.layer.8.intermediate.dense.weight] Quantization error: mean=0.000853, max=0.001707
+
+[bert.encoder.layer.8.output.dense.weight] Quantized range: [-127, 45]
+[bert.encoder.layer.8.output.dense.weight] Quantization error: mean=0.006178, max=0.012347
+
+[bert.encoder.layer.8.output.LayerNorm.weight] Quantized range: [21, 127]
+[bert.encoder.layer.8.output.LayerNorm.weight] Quantization error: mean=0.003120, max=0.006358
+
+[bert.encoder.layer.9.attention.self.query.weight] Quantized range: [-116, 127]
+[bert.encoder.layer.9.attention.self.query.weight] Quantization error: mean=0.000528, max=0.001058
+
+[bert.encoder.layer.9.attention.self.key.weight] Quantized range: [-107, 127]
+[bert.encoder.layer.9.attention.self.key.weight] Quantization error: mean=0.001234, max=0.002467
+
+[bert.encoder.layer.9.attention.self.value.weight] Quantized range: [-121, 127]
+[bert.encoder.layer.9.attention.self.value.weight] Quantization error: mean=0.000410, max=0.000820
+
+[bert.encoder.layer.9.attention.output.dense.weight] Quantized range: [-127, 122]
+[bert.encoder.layer.9.attention.output.dense.weight] Quantization error: mean=0.000738, max=0.001476
+
+[bert.encoder.layer.9.attention.output.LayerNorm.weight] Quantized range: [30, 127]
+[bert.encoder.layer.9.attention.output.LayerNorm.weight] Quantization error: mean=0.004922, max=0.009897
+
+[bert.encoder.layer.9.intermediate.dense.weight] Quantized range: [-127, 114]
+[bert.encoder.layer.9.intermediate.dense.weight] Quantization error: mean=0.001620, max=0.003239
+
+[bert.encoder.layer.9.output.dense.weight] Quantized range: [-127, 90]
+[bert.encoder.layer.9.output.dense.weight] Quantization error: mean=0.006052, max=0.012105
+
+[bert.encoder.layer.9.output.LayerNorm.weight] Quantized range: [12, 127]
+[bert.encoder.layer.9.output.LayerNorm.weight] Quantization error: mean=0.002920, max=0.005651
+
+[bert.encoder.layer.10.attention.self.query.weight] Quantized range: [-115, 127]
+[bert.encoder.layer.10.attention.self.query.weight] Quantization error: mean=0.000912, max=0.001823
+
+[bert.encoder.layer.10.attention.self.key.weight] Quantized range: [-127, 104]
+[bert.encoder.layer.10.attention.self.key.weight] Quantization error: mean=0.000632, max=0.001264
+
+[bert.encoder.layer.10.attention.self.value.weight] Quantized range: [-124, 127]
+[bert.encoder.layer.10.attention.self.value.weight] Quantization error: mean=0.000498, max=0.000996
+
+[bert.encoder.layer.10.attention.output.dense.weight] Quantized range: [-116, 127]
+[bert.encoder.layer.10.attention.output.dense.weight] Quantization error: mean=0.000562, max=0.001126
+
+[bert.encoder.layer.10.attention.output.LayerNorm.weight] Quantized range: [21, 127]
+[bert.encoder.layer.10.attention.output.LayerNorm.weight] Quantization error: mean=0.006388, max=0.012577
+
+[bert.encoder.layer.10.intermediate.dense.weight] Quantized range: [-127, 127]
+[bert.encoder.layer.10.intermediate.dense.weight] Quantization error: mean=0.003230, max=0.006461
+
+[bert.encoder.layer.10.output.dense.weight] Quantized range: [-127, 18]
+[bert.encoder.layer.10.output.dense.weight] Quantization error: mean=0.012553, max=0.025092
+
+[bert.encoder.layer.10.output.LayerNorm.weight] Quantized range: [11, 127]
+[bert.encoder.layer.10.output.LayerNorm.weight] Quantization error: mean=0.003298, max=0.006574
+
+[bert.encoder.layer.11.attention.self.query.weight] Quantized range: [-127, 116]
+[bert.encoder.layer.11.attention.self.query.weight] Quantization error: mean=0.001418, max=0.002834
+
+[bert.encoder.layer.11.attention.self.key.weight] Quantized range: [-127, 84]
+[bert.encoder.layer.11.attention.self.key.weight] Quantization error: mean=0.000930, max=0.001860
+
+[bert.encoder.layer.11.attention.self.value.weight] Quantized range: [-118, 127]
+[bert.encoder.layer.11.attention.self.value.weight] Quantization error: mean=0.000554, max=0.001108
+
+[bert.encoder.layer.11.attention.output.dense.weight] Quantized range: [-127, 81]
+[bert.encoder.layer.11.attention.output.dense.weight] Quantization error: mean=0.000617, max=0.001235
+
+[bert.encoder.layer.11.attention.output.LayerNorm.weight] Quantized range: [52, 127]
+[bert.encoder.layer.11.attention.output.LayerNorm.weight] Quantization error: mean=0.003130, max=0.006342
+
+[bert.encoder.layer.11.intermediate.dense.weight] Quantized range: [-127, 80]
+[bert.encoder.layer.11.intermediate.dense.weight] Quantization error: mean=0.000881, max=0.001762
+
+[bert.encoder.layer.11.output.dense.weight] Quantized range: [-127, 56]
+[bert.encoder.layer.11.output.dense.weight] Quantization error: mean=0.004227, max=0.008458
+
+[bert.encoder.layer.11.output.LayerNorm.weight] Quantized range: [44, 127]
+[bert.encoder.layer.11.output.LayerNorm.weight] Quantization error: mean=0.001545, max=0.003063
+
+[bert.pooler.dense.weight] Quantized range: [-127, 126]
+[bert.pooler.dense.weight] Quantization error: mean=0.000772, max=0.001543
+
+[classifier.weight] Quantized range: [-127, 100]
+[classifier.weight] Quantization error: mean=0.000154, max=0.000310
