@@ -1,61 +1,69 @@
 import torch
-from function.spark_encode import spark_encode
+from spark_encode import spark_encode
 from spark_decode import spark_decode
 from transformers import BertForSequenceClassification, BertTokenizer
 from datasets import load_dataset
 from transformers import TrainingArguments, Trainer
 from sklearn.metrics import accuracy_score
 
-# model = BertForSequenceClassification.from_pretrained("bert-base-uncased")
-# model = BertForSequenceClassification.from_pretrained("textattack/bert-base-uncased-SST-2")
+# ✅ 1. BERT 모델 로드 (SST-2 분류용)
+# model = BertForSequenceClassification.from_pretrained(
+#     "textattack/bert-base-uncased-SST-2",
+#     trust_remote_code=True,
+#     use_safetensors=True
+# )
+
 model = BertForSequenceClassification.from_pretrained(
     "textattack/bert-base-uncased-SST-2",
-    trust_remote_code=True,
-    use_safetensors=True
 )
+
 
 tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 
+# ✅ 2. 모델 weight에 SPARK 인코딩/디코딩 적용
 scale_map = {}
-offset = 128
+offset = 128  # zero-point를 128로 설정해 UINT8로 맞춤
 
-for name, param in model.named_parameters(): # reference (not copy)
+for name, param in model.named_parameters():
     if "weight" in name and param.requires_grad:
-        # 1. float → UINT8
+        # float32 → INT8 → SPARK 인코딩 → 디코딩 → float32 복원
         max_val = param.data.abs().max()
         scale = 127.5 / max_val
         scale_map[name] = scale
 
+        # 양자화
         quantized_tensor = torch.round(param.data * scale + offset).clamp(0, 255).to(torch.int)
 
-        # 2. SPARK 인코딩 + 디코딩
-        decoded_vals = []
-        for v in quantized_tensor.view(-1):
-            encoded, _, _ = spark_encode(int(v))  # v는 0~255
+        # SPARK 인코딩 후 디코딩, 그리고 float로 복원
+        flat_tensor = quantized_tensor.view(-1)
+        restored_tensor = torch.empty_like(flat_tensor, dtype=torch.float32)
+
+        for i in range(flat_tensor.size(0)):
+            encoded, _, _ = spark_encode(int(flat_tensor[i].item()))
             decoded = spark_decode(encoded)
-            restored = (decoded - offset) / scale
-            decoded_vals.append(restored)
+            restored_tensor[i] = (decoded - offset) / scale
 
-        decoded_tensor = torch.tensor(decoded_vals).reshape(param.shape)
-        param.data = decoded_tensor.float()
+        # 복원된 float32 weight로 모델 param 업데이트
+        param.data = restored_tensor.view(param.shape)
 
-# 평가 데이터셋 로드 : sentiment pos/neg classification
+# ✅ 3. SST-2 데이터셋 로드 및 전처리
 dataset = load_dataset("glue", "sst2")
+
 def preprocess(example):
     return tokenizer(example["sentence"], truncation=True, padding="max_length", max_length=128)
 
 encoded_dataset = dataset.map(preprocess, batched=True)
 encoded_dataset.set_format(type="torch", columns=["input_ids", "attention_mask", "label"])
 
-# 정확도 metric
+# ✅ 4. 정확도 metric 정의
 def compute_metrics(p):
     preds = p.predictions.argmax(axis=-1)
     return {"accuracy": accuracy_score(p.label_ids, preds)}
 
-# Trainer 설정
+# ✅ 5. Trainer로 정확도 평가
 training_args = TrainingArguments(output_dir="./spark_eval", per_device_eval_batch_size=64)
 trainer = Trainer(model=model, args=training_args, compute_metrics=compute_metrics)
 
-# 평가 실행
+# ✅ 6. 평가 실행
 eval_result = trainer.evaluate(eval_dataset=encoded_dataset["validation"])
 print(f"\n✅ SPARK 디코딩 후 정확도: {eval_result['eval_accuracy']:.4f}")

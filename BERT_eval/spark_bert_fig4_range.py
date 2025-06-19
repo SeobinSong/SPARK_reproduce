@@ -1,3 +1,8 @@
+##################################################################################################
+# INT8 Quantization -> Encode 과정 중, Err범위에 포함되는 parameter 통계 확인 코드                  
+# 이 코드는 SPARK 논문 Figure 4의 범위와 일치                                                       
+# SPARK Encode error범위 : [16, 48, 80, 112, 128, 160, 192, 224] 를 시작으로 + 16씩 증가하는 구간   
+##################################################################################################
 import torch
 from spark_encode import spark_encode
 from transformers import BertForSequenceClassification, BertTokenizer
@@ -14,6 +19,7 @@ tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 spark_lossy_range = set()
 for start in [16, 48, 80, 112, 128, 160, 192, 224]:
     spark_lossy_range.update(range(start, start + 16))  # 각 구간 16개씩
+
 
 count_lossy_prone = 0
 count_safe = 0
