@@ -1,5 +1,4 @@
 from pprint import pprint
-from function.spark_encode import spark_encode
 
 def spark_decode(bin_code: str) -> int:
     """
